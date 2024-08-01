@@ -33,7 +33,7 @@ btnGenerate.addEventListener('click', function() {
         costoBiglietto.value = tot
     }  else{
             message = `Biglietto standard`
-            costoBiglietto.value = ticketPrice
+            costoBiglietto.value = ticketPrice + costoBiglietto.value
     } 
 
     // RANDOM CODICE PASSEGGIERO
