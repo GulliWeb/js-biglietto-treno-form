@@ -36,6 +36,17 @@ btnGenerate.addEventListener('click', function() {
             costoBiglietto.value = ticketPrice
     } 
 
+    // RANDOM CODICE PASSEGGIERO
+    let cp = document.getElementById('txtCpRnd')
+    let rnd = '9' + Math.floor(Math.random() * 1000)
+    cp.value = rnd
+
+    // RANDOM CODICE CARROZZA
+    let cr = document.getElementById('txtCarRnd')
+    let rndCr = Math.floor(Math.random() * 9) + 1
+    cr.value = rndCr
+
+
     // ASSEGNO I RISULTATI IN OUTPUT SULLA PAGINA
     const ticketName = document.getElementById('txtArea')
     ticketName.innerText = ticketName.value + userNameValue
@@ -43,4 +54,13 @@ btnGenerate.addEventListener('click', function() {
     discount.value = message
 }
 ) 
+
+btnReset.addEventListener('click', function() {
+    userName.value = '';
+    km.value = '';
+    age.value = '';
+    document.getElementById('txtArea').innerText = '';
+    document.getElementById('txtCpRnd').value = '';
+    document.getElementById('txtTot').value = '';
+});
 
