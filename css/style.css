@@ -74,6 +74,7 @@ body{
 .card input, textarea{
     color: white;
     background-color: violet;
+    text-align: center;
 }
 
 .card input:hover, textarea:hover{

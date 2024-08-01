@@ -55,6 +55,7 @@ btnGenerate.addEventListener('click', function() {
 }
 ) 
 
+// BTN RESET FORM
 btnReset.addEventListener('click', function() {
     userName.value = '';
     km.value = '';
