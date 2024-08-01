@@ -1,0 +1,98 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Main content */
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h1{
+    margin-bottom: 20px;
+    color: violet;
+}
+
+.card input, textarea{
+    color: white;
+    background-color: violet;
+}
+
+.card input:hover, textarea:hover{
+    background-color: white;
+    color: violet;
+}
+
+#btnGenerate, #btnReset{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    background: linear-gradient(violet, blue);
+
+    color: violet;
+}
+
+#btnGenerate:hover, #btnReset:hover{
+    width: 120px;
+    border-radius: 20px;
+    color: violet;
+}
+
+
+.card{
+    margin: 0 10px;
+    padding: 2em;
+    width: 500px;
+    height: 300px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 70%, violet);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3S spin linear infinite;
+}
+
+.card::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg
+    }
+    to{
+        --angle: 360deg
+    }
+}

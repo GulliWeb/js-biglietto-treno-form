@@ -3,47 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        </header>
-        <form action="">
-            <!-- Name e surname -->
-            <p>Nome e cognome</p>
-            <input type="text" name="" id="txtName">
+        <div class="card">
+            <header>
+                <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            </header>
+            <form action="">
+                <!-- Name e surname -->
+                <p>Nome e cognome</p>
+                <input type="text" name="" id="txtName">
+    
+                <p>Km da percorrere</p>
+                <input type="text" name="" id="txtKm">
+    
+                <p>Fascia d'età</p>
+                <input type="select" name="" id="txtAge"><br>
+       
+                <!-- Button -->
+                 <input type="button" value="Genera" id="btnGenerate">
+                 <input type="button" value="Reset" id="btnReset">
+        </div>
+    
+         <!-- Ticket section -->
+         <div class="card">
+            <h1>IL TUO BIGLIETTO</h1>
+                  <p>DETTAGLIO PASSEGGERI</p>
+                  <textarea name="" id="txtArea">NOME PASSEGGIERO
+    
+                  </textarea>
+                  <p>Offerta</p>
+                  <input type="text" name="" id="txtDiscount" value="Biglietto Standard">
+    
+                  <p>Codice Carrozza</p>
+                  <input type="text" name="" id="txtCarRnd">
+    
+                  <p>Codice CP</p>
+                  <input type="text" name="" id="txtCpRnd">
+    
+                  <p>Costo biglietto</p>
+                  <input type="text" name="" id="txtTot">
+                </form>
+            </div>   
+        </div>
+    </body>  
+    </html>
 
-            <p>Km da percorrere</p>
-            <input type="text" name="" id="txtKm">
+   
+   
 
-            <p>Fascia d'età</p>
-            <input type="text" name="" id="txtAge">
 
-            <!-- Button -->
-             <input type="button" value="Genera" id="btnGenerate">
-             <input type="button" value="Reset" id="btnReset">
-
-             <!-- Ticket section -->
-              <h1>IL TUO BIGLIETTO</h1>
-              <p>DETTAGLIO PASSEGGERI</p>
-              <textarea name="" id="txtArea">NOME PASSEGGIERO
-
-              </textarea>
-              <p>Offerta</p>
-              <input type="text" name="" id="txtDiscount" value="Biglietto Standard">
-
-              <p>Codice Carrozza</p>
-              <input type="text" name="" id="txtCarRnd">
-
-              <p>Codice CP</p>
-              <input type="text" name="" id="txtCpRnd">
-
-              <p>Costo biglietto</p>
-              <input type="text" name="" id="txtTot">
-        </form>
-    </div>
-</body>
-</html>
+  
