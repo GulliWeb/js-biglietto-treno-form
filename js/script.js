@@ -24,7 +24,7 @@ btnGenerate.addEventListener('click', function() {
         let discount = parseInt(ticketPrice) * 0.20
         let tot = ticketPrice - discount
         message = `Biglietto scontato del 20% !` 
-        costoBiglietto.value = tot 
+        costoBiglietto.value = tot
        
     } else if (ageValue > 65) {
         let discount = ticketPrice * 0.40
