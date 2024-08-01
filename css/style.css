@@ -18,37 +18,11 @@ body{
     align-items: center;
 }
 
+/* Card layout */
 .card h1{
     margin-bottom: 20px;
     color: violet;
 }
-
-.card input, textarea{
-    color: white;
-    background-color: violet;
-}
-
-.card input:hover, textarea:hover{
-    background-color: white;
-    color: violet;
-}
-
-#btnGenerate, #btnReset{
-    margin-top: 20px;
-    padding: 10px;
-    width: 100px;
-    border-radius: 20px;
-    background: linear-gradient(violet, blue);
-
-    color: violet;
-}
-
-#btnGenerate:hover, #btnReset:hover{
-    width: 120px;
-    border-radius: 20px;
-    color: violet;
-}
-
 
 .card{
     margin: 0 10px;
@@ -95,4 +69,31 @@ body{
     to{
         --angle: 360deg
     }
+}
+
+.card input, textarea{
+    color: white;
+    background-color: violet;
+}
+
+.card input:hover, textarea:hover{
+    background-color: white;
+    color: violet;
+}
+
+
+#btnGenerate, #btnReset{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    background: linear-gradient(violet, blue);
+
+    color: violet;
+}
+
+#btnGenerate:hover, #btnReset:hover{
+    width: 120px;
+    border-radius: 20px;
+    color: violet;
 }
